@@ -469,61 +469,61 @@ const ContactSection = () => {
   };
 
   return (
-    <section id="contact" className="py-32 relative overflow-hidden scroll-mt-24">
+    <section id="contact" className="py-16 md:py-32 relative overflow-hidden scroll-mt-24">
       <AnimatePresence>
         {showPopup && <SuccessPopup onClose={() => setShowPopup(false)} />}
       </AnimatePresence>
 
-      <div className="container mx-auto px-6">
-        <div className="max-w-6xl mx-auto glass p-10 md:p-24 rounded-[4rem] border border-white/10 overflow-hidden relative shadow-2xl">
-          <div className="grid lg:grid-cols-2 gap-20 relative z-10">
-            <div>
-              <span className="text-cyan-400 font-black uppercase tracking-[0.4em] text-[10px] block mb-6">Prêt à collaborer ?</span>
-              <h2 className="text-6xl font-black mb-10 leading-[0.9] tracking-tighter italic">Bâtissons <br /><span className="text-gradient">L'Innovation</span></h2>
-              <p className="text-slate-400 text-lg mb-16 max-w-sm font-medium">Connecté au cluster MongoDB <b>skanderchouk_db</b> via Atlas.</p>
-              <div className="space-y-8">
-                <div className="flex items-center gap-8 group">
-                  <div className="w-20 h-20 glass flex items-center justify-center rounded-[2rem] group-hover:bg-cyan-500 transition-all duration-700 border border-white/10">
-                    <Mail className="text-cyan-400 group-hover:text-slate-950" size={32} />
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="max-w-6xl mx-auto glass p-6 md:p-12 lg:p-24 rounded-[4rem] border border-white/10 overflow-hidden relative shadow-2xl">
+            <div className="grid lg:grid-cols-2 gap-10 lg:gap-20 relative z-10">
+              <div>
+                <span className="text-cyan-400 font-black uppercase tracking-[0.4em] text-[10px] block mb-6">Prêt à collaborer ?</span>
+                <h2 className="text-4xl md:text-6xl font-black mb-10 leading-[0.9] tracking-tighter italic">Bâtissons <br /><span className="text-gradient">L'Innovation</span></h2>
+                <p className="text-slate-400 text-base md:text-lg mb-8 md:mb-16 max-w-sm font-medium">Connecté au cluster MongoDB <b>skanderchouk_db</b> via Atlas.</p>
+              <div className="space-y-6 md:space-y-8">
+                <div className="flex items-center gap-4 md:gap-8 group">
+                  <div className="w-16 h-16 md:w-20 md:h-20 glass flex items-center justify-center rounded-[2rem] group-hover:bg-cyan-500 transition-all duration-700 border border-white/10">
+                    <Mail className="text-cyan-400 group-hover:text-slate-950" size={24} />
                   </div>
                   <div>
                     <span className="text-[10px] font-black text-slate-500 uppercase tracking-widest block mb-1">Email Personnel</span>
-                    <div className="text-slate-200 font-black text-xl tracking-tight">{CV_DATA.email}</div>
+                    <div className="text-slate-200 font-black text-lg md:text-xl tracking-tight">{CV_DATA.email}</div>
                   </div>
                 </div>
-                <div className="flex items-center gap-8 group">
-                  <div className="w-20 h-20 glass flex items-center justify-center rounded-[2rem] group-hover:bg-indigo-500 transition-all duration-700 border border-white/10">
-                    <MapPin className="text-indigo-400 group-hover:text-white" size={32} />
+                <div className="flex items-center gap-4 md:gap-8 group">
+                  <div className="w-16 h-16 md:w-20 md:h-20 glass flex items-center justify-center rounded-[2rem] group-hover:bg-indigo-500 transition-all duration-700 border border-white/10">
+                    <MapPin className="text-indigo-400 group-hover:text-white" size={24} />
                   </div>
                   <div>
                     <span className="text-[10px] font-black text-slate-500 uppercase tracking-widest block mb-1">Localisation</span>
-                    <div className="text-slate-200 font-black text-xl tracking-tight">{CV_DATA.location}</div>
+                    <div className="text-slate-200 font-black text-lg md:text-xl tracking-tight">{CV_DATA.location}</div>
                   </div>
                 </div>
               </div>
             </div>
 
-            <form onSubmit={handleSubmit} className="bg-slate-900/40 p-10 md:p-14 rounded-[3rem] border border-white/5 space-y-8 shadow-2xl backdrop-blur-3xl relative">
+            <form onSubmit={handleSubmit} className="bg-slate-900/40 p-6 md:p-10 lg:p-14 rounded-[3rem] border border-white/5 space-y-8 shadow-2xl backdrop-blur-3xl relative">
               <div className="grid md:grid-cols-2 gap-8">
                 <div className="space-y-2">
                   <label className="text-[10px] font-black text-slate-500 uppercase tracking-widest ml-2">Nom Complet</label>
-                  <input type="text" value={formState.name} onChange={e => setFormState({...formState, name: e.target.value})} className="w-full glass bg-transparent border-white/10 rounded-2xl px-8 py-5 outline-none focus:border-cyan-500/50 transition-all font-bold text-white shadow-inner" placeholder="John Doe" required />
+                  <input type="text" value={formState.name} onChange={e => setFormState({...formState, name: e.target.value})} className="w-full glass bg-transparent border-white/10 rounded-2xl px-4 md:px-8 py-4 md:py-5 outline-none focus:border-cyan-500/50 transition-all font-bold text-white shadow-inner" placeholder="John Doe" required />
                 </div>
                 <div className="space-y-2">
                    <label className="text-[10px] font-black text-slate-500 uppercase tracking-widest ml-2">Adresse Email</label>
-                   <input type="email" value={formState.email} onChange={e => setFormState({...formState, email: e.target.value})} className="w-full glass bg-transparent border-white/10 rounded-2xl px-8 py-5 outline-none focus:border-cyan-500/50 transition-all font-bold text-white shadow-inner" placeholder="john@example.com" required />
+                   <input type="email" value={formState.email} onChange={e => setFormState({...formState, email: e.target.value})} className="w-full glass bg-transparent border-white/10 rounded-2xl px-4 md:px-8 py-4 md:py-5 outline-none focus:border-cyan-500/50 transition-all font-bold text-white shadow-inner" placeholder="john@example.com" required />
                 </div>
               </div>
               <div className="space-y-2">
                 <label className="text-[10px] font-black text-slate-500 uppercase tracking-widest ml-2">Message</label>
-                <textarea rows={5} value={formState.message} onChange={e => setFormState({...formState, message: e.target.value})} className="w-full glass bg-transparent border-white/10 rounded-3xl px-8 py-6 outline-none focus:border-cyan-500/50 transition-all font-bold text-white shadow-inner resize-none" placeholder="Expliquez-moi votre projet en quelques mots..." required></textarea>
+                <textarea rows={5} value={formState.message} onChange={e => setFormState({...formState, message: e.target.value})} className="w-full glass bg-transparent border-white/10 rounded-3xl px-4 md:px-8 py-4 md:py-6 outline-none focus:border-cyan-500/50 transition-all font-bold text-white shadow-inner resize-none" placeholder="Expliquez-moi votre projet en quelques mots..." required></textarea>
               </div>
               <motion.button 
                 whileHover={{ scale: 1.02, y: -4 }}
                 whileTap={{ scale: 0.98 }}
                 type="submit"
                 disabled={isSubmitting}
-                className={`w-full ${isSubmitting ? 'bg-slate-800' : 'bg-white hover:bg-cyan-500'} text-slate-950 font-black py-6 rounded-2xl flex items-center justify-center gap-4 transition-all uppercase tracking-widest text-xs shadow-2xl disabled:cursor-wait`}
+                className={`w-full ${isSubmitting ? 'bg-slate-800' : 'bg-white hover:bg-cyan-500'} text-slate-950 font-black py-4 md:py-6 rounded-2xl flex items-center justify-center gap-4 transition-all uppercase tracking-widest text-xs shadow-2xl disabled:cursor-wait`}
               >
                 {isSubmitting ? (
                   <>Envoi en cours <Loader2 size={20} className="animate-spin" /></>

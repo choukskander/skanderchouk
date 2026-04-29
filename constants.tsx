@@ -88,7 +88,8 @@ export const PROJECTS: Project[] = [
     category: 'MERN',
     description: 'Interface de suivi en temps réel des techniciens de maintenance avec gestion des tickets et reporting analytique.',
     image: 'https://res.cloudinary.com/dftgawfdc/image/upload/v1768488509/Intervention_athrbj.png',
-    tags: ['Express', 'MongoDB', 'React', 'Recharts']
+    tags: ['Express', 'MongoDB', 'React', 'Recharts'],
+    link: 'https://intervention-technique.surge.sh/'
   },
   {
     id: 'p5',
@@ -121,6 +122,24 @@ export const PROJECTS: Project[] = [
     description: 'Système de microservices pour la gestion des chambres et des réservations avec MySQL, H2 et MongoDB.',
     image: 'https://res.cloudinary.com/dftgawfdc/image/upload/v1767003164/reservation_wq0x5c.jpg',
     tags: ['Microservices', 'Spring Boot', 'MongoDB', 'MySQL']
+  },
+  {
+    id: 'p8',
+    title: 'One More Fit',
+    category: 'MERN',
+    description: 'Application pour salle de sport permettant les réservations de cours, consultation du planning, et notifications en cas de fin d\'abonnement.',
+    image: 'https://res.cloudinary.com/dquvfn3xn/image/upload/v1776248198/Capture_d_%C3%A9cran_2026-04-15_111439_g42eqt.png',
+    tags: ['MongoDB', 'Express', 'React', 'Node.js'],
+    link: 'https://onemorefit.netlify.app/'
+  },
+  {
+    id: 'p9',
+    title: 'Meca-Gestion',
+    category: 'MERN',
+    description: 'Système de gestion d\'atelier mécanique avec tableaux de bord client/mécanicien et chatbot intégré. Gère les réparations, pièces, factures et rendez-vous.',
+    image: 'https://res.cloudinary.com/dftgawfdc/image/upload/v1777462057/Meca-Gestion_mfr4nv.png',
+    tags: ['MongoDB', 'Express', 'React', 'Node.js', 'Socket.io'],
+    link: 'https://ateliermecanique.netlify.app/'
   }
 ];
 
@@ -136,7 +155,7 @@ export const SKILLS: Skill[] = [
   { name: 'Docker', icon: 'https://cdn.simpleicons.org/docker/2496ED', category: 'DevOps' },
   { name: 'Jenkins', icon: 'https://cdn.simpleicons.org/jenkins/D24939', category: 'DevOps' },
   { name: 'Nexus', icon: 'https://cdn.simpleicons.org/sonatype/white', category: 'DevOps' },
-  { name: 'SonarQube', icon: 'https://cdn.simpleicons.org/sonarqube/4E9BCD', category: 'DevOps' },
+  { name: 'SonarQube', icon: 'https://cdn.simpleicons.org/sonarqubeserver/126ED3', category: 'DevOps' },
   { name: 'Prometheus', icon: 'https://cdn.simpleicons.org/prometheus/E6522C', category: 'DevOps' },
   { name: 'Grafana', icon: 'https://cdn.simpleicons.org/grafana/F46800', category: 'DevOps' },
   { name: 'Git', icon: 'https://cdn.simpleicons.org/git/F05032', category: 'Tool' },

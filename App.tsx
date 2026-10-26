@@ -248,7 +248,7 @@ const Hero = () => {
               whileTap={{ scale: 0.95 }}
               onClick={() => {
                 const link = document.createElement('a');
-                link.href = '/assets/Chouk Skander -CV.pdf';
+                link.href = '/assets/Chouk%20Skander%20-CV.pdf';
                 link.download = 'Chouk Skander -CV.pdf';
                 document.body.appendChild(link);
                 link.click();
@@ -558,7 +558,7 @@ const App: React.FC = () => {
             <a href="#contact" className="text-[10px] font-black text-slate-500 hover:text-white transition-colors uppercase tracking-[0.2em]">Contact</a>
           </div>
           <div className="text-slate-600 font-bold text-[10px] uppercase tracking-[0.3em]">
-            <p>© {new Date().getFullYear()} — Made with Excellence for Skander Chouk</p>
+            <p>© {new Date().getFullYear()} — Skander Chouk (Chouk Skander) · Ingénieur Full-Stack MERN</p>
           </div>
         </div>
       </footer>

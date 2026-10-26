@@ -137,7 +137,7 @@ export const PROJECTS: Project[] = [
     title: 'Meca-Gestion',
     category: 'MERN',
     description: 'Système de gestion d\'atelier mécanique avec tableaux de bord client/mécanicien et chatbot intégré. Gère les réparations, pièces, factures et rendez-vous.',
-    image: 'https://res.cloudinary.com/dftgawfdc/image/upload/v1777462057/Meca-Gestion_mfr4nv.png',
+    image: 'https://res.cloudinary.com/dftgawfdc/image/upload/v1791797759/meca-gestion_q5bhnd.png',
     tags: ['MongoDB', 'Express', 'React', 'Node.js', 'Socket.io'],
     link: 'https://ateliermecanique.netlify.app/'
   }

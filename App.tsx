@@ -480,7 +480,6 @@ const ContactSection = () => {
               <div>
                 <span className="text-cyan-400 font-black uppercase tracking-[0.4em] text-[10px] block mb-6">Prêt à collaborer ?</span>
                 <h2 className="text-4xl md:text-6xl font-black mb-10 leading-[0.9] tracking-tighter italic">Bâtissons <br /><span className="text-gradient">L'Innovation</span></h2>
-                <p className="text-slate-400 text-base md:text-lg mb-8 md:mb-16 max-w-sm font-medium">Connecté au cluster MongoDB <b>skanderchouk_db</b> via Atlas.</p>
               <div className="space-y-6 md:space-y-8">
                 <div className="flex items-center gap-4 md:gap-8 group">
                   <div className="w-16 h-16 md:w-20 md:h-20 glass flex items-center justify-center rounded-[2rem] group-hover:bg-cyan-500 transition-all duration-700 border border-white/10">

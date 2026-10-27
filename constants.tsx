@@ -13,6 +13,16 @@ export const CV_DATA = {
 
 export const EXPERIENCES: Experience[] = [
   {
+    id: '5',
+    title: "Développeur Web Full Stack",
+    company: "Billcom Consulting",
+    period: "Actuellement",
+    description: [
+      "Poste actuel de développeur web full stack chez Billcom Consulting"
+    ],
+    techs: [],
+  },
+  {
     id: '1',
     title: "Stage de Fin d'Études",
     company: "ZIMYS (Zillion Intelligences & Mystic Solutions)",
